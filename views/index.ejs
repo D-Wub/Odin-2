@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title><%= title %></title>
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <% messages.forEach((message) => { %>
+            <div style="border: 2px solid grey">
+                <h2 style="font-size: large"><%= message.user %></h2>
+                <p><%= message.text %></p>
+                <p style="color: grey"><%= message.added %></p>
+            </div>
+        <% }); %>
+        <a href="/new">Compose Message</a>
+    </body>
+</html>
