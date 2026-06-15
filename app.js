@@ -12,10 +12,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/', indexRouter);
 
 
-const PORT = 3000;
+const PORT = 8000;
 app.listen(PORT, (error) => {
     if(error){
         throw error;
     }
-    console.log(`My third express app - listening on port ${PORT}! Click http://localhost:3000/ to view.`);
+    console.log(`My third express app - listening on port ${PORT}! Click http://localhost:${PORT}/ to view.`);
 });
